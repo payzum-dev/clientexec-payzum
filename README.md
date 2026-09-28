@@ -42,11 +42,16 @@ chargeback fraud on VPS and domain orders is routine.
 
 ## Installation
 
-Copy this repository's `plugins/payment/payzum/` folder into your ClientExec
-install:
+**From the release zip (recommended).** Download
+[`payzum-clientexec-1.0.0.zip`](https://github.com/payzum-dev/clientexec-payzum/releases/latest) and
+unzip it at your ClientExec root — the archive already mirrors the expected tree, so the plugin
+lands at `plugins/payment/payzum/`.
+
+**From a clone.** This repository holds the plugin under `payment/payzum/`, which maps to
+`plugins/payment/payzum/` inside ClientExec:
 
 ```
-<clientexec>/plugins/payment/payzum/
+payment/payzum/   →   <clientexec>/plugins/payment/payzum/
 ```
 
 Then enable **Payzum** under **Settings → Payment Gateways**.
